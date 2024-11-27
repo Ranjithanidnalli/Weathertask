@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherNow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>WeatherNow 🌤️</h1>
+    </header>
+    <main>
+      <div class="search">
+        <input type="text" id="city" placeholder="Enter city name">
+        <button onclick="getWeather()">Get Weather</button>
+      </div>
+      <div id="weather-info" class="hidden">
+        <h2 id="city-name"></h2>
+        <p id="temperature"></p>
+        <p id="weather"></p>
+        <img id="icon" src="weather-2019-02-07.png" width="100" height="100"alt="Weather icon">
+      </div>
+    </main>
+    <footer>
+      <p>Powered by OpenWeather API</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
